@@ -4,7 +4,8 @@ h1{
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	color: #C4161C;
-	line-height: 1.4em;
+	line-height: .8em;
+	padding-left: 15px;
 }
 
 figcaption{
