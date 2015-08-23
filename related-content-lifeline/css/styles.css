@@ -1,0 +1,42 @@
+/*font-family: 'Lato', sans-serif;*/
+
+h1{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color: #C4161C;
+	line-height: 1.4em;
+}
+
+figcaption{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-style: italic;
+	color: #585858;
+}
+
+h2{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+
+p{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+figure img{
+	width: 100%;
+}
+
+iframe{
+	width: 100%;
+}
+a{
+	text-decoration: none;
+	color: #585858;
+}
+
+a:hover{
+	color: #C4161C;
+	text-decoration: none;
+}
