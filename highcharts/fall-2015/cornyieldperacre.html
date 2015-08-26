@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Corn Yields 2015</title>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		<script type="text/javascript">
+$(function () {
+    $('#container').highcharts({
+        chart:{ 
+            type: 'column'
+        },
+        title: {
+            text: 'Bushels of Corn Per Acre',
+            x: -20 //center
+        },
+        subtitle: {
+            text: 'Source: USDA National Agricultural Statistics Service <br> By James Benedict',
+            x: -20
+        },
+        xAxis: {
+            categories: ['2015', '2014', '2013', '2012', '2011', '2010', '2009', '2008', '2007', '2006']
+        },
+        yAxis: {
+            title: {
+                text: 'Yield per Acre (Bushels)'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            valueSuffix: ' Bushels'
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name: 'Bushels per Acre ',
+            data: [158, 188, 177, 99, 146, 157, 171, 160, 154, 157],
+            color: '#365464'
+        }]
+    });
+});
+		</script>
+	</head>
+	<body>
+<script src="../js/highcharts.js"></script>
+<script src="../js/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+	</body>
+</html>
