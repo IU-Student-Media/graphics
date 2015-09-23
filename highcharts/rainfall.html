@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		<script type="text/javascript">
+$(function () {
+    $('#container').highcharts({
+        title: {
+            text: 'Rainfall in Bloomington Indiana',
+            x: -20 //center
+        },
+        subtitle: {
+            text: 'Source: National Weather Service Forecast Office <br> By James Benedict',
+            x: -20
+        },
+        xAxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                'Jul', 'Aug']
+        },
+        yAxis: {
+            title: {
+                text: 'Precipitation (Inches)'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            valueSuffix: ' Inches'
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name: '2015 ',
+            data: [2.21,1.36,4.64,4.8,1.55,10.57,6.15,4.17],
+            color: '#365464'
+        }, {
+            name: 'Normal',
+            data: [3.31,2.76,3.88,4.7,5.24,4.89,4.89,2.61,],
+            color: '#8FA5B1',
+        }]
+    });
+});
+		</script>
+	</head>
+	<body>
+<script src="js/highcharts.js"></script>
+<script src="js/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+	</body>
+</html>
