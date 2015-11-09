@@ -11,23 +11,28 @@
 
 	<title>Build-out template</title>
 	<link rel="SHORTCUT ICON"
-       href="http://duvq7ua50whdw.cloudfront.net/20151014QyeoL4yWsx/dist/img/favicon.ico"
+       href="http://duvq7ua50whdw.cloudfront.net/20151014QyeoL4yWsx/dist/img/favicon.ico">
 
 	<!-- below is the link to the image facebook will pull as the preview to your article -->
 	<meta property="og:image"
 	content="img/header.lg.jpg"/>
 
-	<!-- STYLES make sure ids.css is the last style loaded. Do not make any alterations to it without talking to me first. -->
+	<!-- STYLES make sure ids.css is the last style loaded, unless a custom library you're using requires its style loaded last. Do not make any alterations to it without talking to me first. -->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+
+	<link href='//cdn.knightlab.com/libs/soundcite/latest/css/player.css' rel='stylesheet' type='text/css'>
+	<script type='text/javascript' src='//cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>
+	
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css">
+	<link rel="stylesheet" href="css/animate.css">
+        
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/ids.css">
+	<link rel="stylesheet" href="css/ids.css"> 
 
 	<!-- FONTS -->
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,300italic|Merriweather:400,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,700|Lora:400,700|Lato:400,300,100,700' rel='stylesheet' type='text/css'>
 
 
 </head>
@@ -40,7 +45,7 @@
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-NBJX8F');</script>
-  <!-- End Google Tag Manager -->
+  <!-- End Google Tag Manager --> 
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -62,18 +67,62 @@
 			<ul class="nav navbar-nav">
 				<li><span class="nav-headline">Your Headline Here:</span></li>
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Section I<span class="caret"></span></a>
+					<a href="#intro" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Introduction<span class="caret"></span></a>
 			          <ul class="dropdown-menu">
-			            <li><a href="#">Section II</a></li>
-			            <li><a href="#">Section III</a></li>
-			            <li><a href="#">Section IV</a></li>
+			            <li><a href="#started">Getting Started</a></li>
 			            <li role="separator" class="divider"></li>
-			            <li><a href="#">Section V</a></li>
+			            <li><a href="#fonts">Fonts</a></li>
 			            <li role="separator" class="divider"></li>
-			            <li><a href="#">Final Section</a></li>
+			            <li><a href="#categories">Media Categories</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#placement">Media Placement</a></li>
 			          </ul>
-
 				</li>
+
+				<li class="dropdown">
+					<a href="#figure" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Figure Media<span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#images">Images</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#video">Video</a></li>
+			            <li role="separator" class="divider"></li> 
+			            <li><a href="#audio">Audio</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#embeded">Embeded</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#timeline">timeline</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#soundcite">soundcite</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#juxtapose">juxtapose</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#storymap">storymap</a></li>
+			          </ul>
+				</li>
+
+				<li class="dropdown">
+					<a href="#html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HTML Media<span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#quote">Pulled Quotes</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#info">More Info</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#related">Related Content</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#slideshow">Slideshow</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#charts">Charts</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#maps">Map</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#mixitup">mixitup</a></li>
+			          </ul>
+				</li>
+
+				 <li><a href="#submit">IDS Submission</a></li>
+
+
+
 				
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
@@ -91,104 +140,164 @@
 </div>
 
 <div class="container-fluid">
+	<a name="intro"></a>
+
 	<div class="row intro"> <!-- intro row -->
 		<div class="col-md-offset-1 col-md-10 headline"> <!-- intro column -->
 			<h1>IDS Build-Out Template</h1>
 		</div>
 
-	  	<div class="col-md-offset-1 col-md-10 lead">
-	  		<h2>This is a general template to publish long form articles at the Indiana Daily Student. This is still a work in progress, so don't start desiging with it yet but you can look around how things are set up. If you have any questions, feel free to come talk to me at the IDS or email me at jabenedi@indiana.edu.</h2>
+	  	<div class="col-md-offset-1 col-md-10 subhead">
+	  		<h2>This is a general template to publish long form articles at the Indiana Daily Student. If you have any questions, feel free to come talk to me at the IDS Mondays and Wednesday from 3 - 4 p.m. or email me at jabenedi@indiana.edu. </h2>
 	  	</div>
 		
 		<div class="col-xs-12 byline-mobile">
-	  		<h6>Story By <span class="name">James Benedict</span></h6>
+			<h6><span class="by">Developed by</span> James Benedict <br> jabenedi@indiana.edu | <a href="https://twitter.com/jamesgbenedict">@jamesgbenedict</a></h6>
+				
+			<h6><span class="by">Developed by</span> James Benedict <br> jabenedi@indiana.edu | <a href="https://twitter.com/jamesgbenedict">@jamesgbenedict</a></h6>
+	  		
 	  		<!-- Special thanks to Kathrine Schulze @kas_schulze for developing the orginial build out with me for Megan Jula's story Waiting for Help. Much of this template is adapted from our work last semested, and I couldn't of done it without her.-->
 	  	</div>
 	</div> <!-- end of intro row -->
 
 
-	<div class="row article">
-		<div class="col-md-offset-1 col-md-6 body-copy">
-			<p><span class="dropcap">T</span>he Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tortor erat, feugiat a mollis in, venenatis eget turpis. Morbi in nunc mauris. Fusce consequat.</p>
+	<div class="row article led">
+		<div class="col-md-offset-1 col-md-7 body-copy">
+			<p><span class="dropcap">T</span>his template is adapted from <a href="http://specials.idsnews.com/caps/"> Waiting for Help</a> published in the Spring of 2015 at the <a href="http://www.idsnews.com">Indiana Daily Student</a>. It is being developed for stories from Bonnie Layton's multimedia section of the Words and Pictures course at IU in the Fall of 2015. </p>
+
+			<p>Read and follow all comments in the html if you wish to publish at the IDS. Call in ids.css and ids.js last in your page unless you are using another plugin that requires its file to be loaded last. If something isn't changing after you style it in the style.css, it might be that the ids.css is over riding it. If this is the case, you can ask to alter the ids.css style, but you need a justification.</p>
+
+			<p>This template was developed to provide a starting point for designers looking to publish their first responsive article. I tried to keep it simple and have it serve as a skeleton for your design. Try to come up with some ideas that differentiate your article from the rest, but keep the overall feel the same. This index.html has every currently available feature, so it will take a while to load and might lag. Make sure to start from the starter folder and do not edit this one, because if you do your article might have uneeded javascript and media files which could cause lag.
+			</p>
+
+			<a name="started"></a>
+
+			<h3>Getting Started</h3>
+
+			<p>Download the <a href="https://github.com/JamesBenedict/ids-buildout-template">template folder</a> from github. You can either download the folder as a zip or setup github and fork it. If you're confused about github and want to use it come into office hours. Github is very powerful and has a lot of cool features that I have no idea really how to use. I just use it for backing up my code and making it easier to share. This level of understanding is pretty easy to figure out. 
+			</p>
+
+			<p>There will be a starter folder in the template. Pull it out of the template folder and rename it your story’s slug. Don't change the template folder’s files but keep it as a resource to copy paste from. If anything does break, you can always redownload the folder. The starter folder only has the basics in it to keep it light and load fast.
+			</p>
+
+			<p>Try to only work on a few things at a time and work on them until they are functional. Don't leave a bunch of half finished features you plan on finalizing later. Since this is a collaborative project make sure to comment your code well on anything you don’t think makes sense. 
+			</p>
+
+			<p>I normally start by placing my section heads and linking them into the nav bar. Then I move onto placing the first draft of the copy, before starting to layout the media. 
+			</p>
+
+			<p>The story’s structure will change around during the editing process so don't get too caught up on the exact layout of everything. Instead try to break the story down into modules that are easy to copy and paste around. Sometimes this is base on the article's sectoin heads, sometimes it is based around graphics. You know your story best and can make the call. I often have a comment before and after code modules that might switch around so I quickly can figure out where it starts and where it ends. Think about building with legos not bricks. 
+			</p>
+
+			<hr>
 		</div>
 
 		<div class="col-md-4 sidebar">
 			<div class="byline">
-				<h6>Story by <span class="name">Lorem Ipsum</span></h6>
-				<h6>Photos by <span class="name">Lorem Ipsum</span></h6>
-				<h6>Developed by <span class="name">James Benedict</span></h6>
+				<h6><span class="by">Developed by</span> James Benedict <br> jabenedi@indiana.edu | <a href="https://twitter.com/jamesgbenedict">@jamesgbenedict</a></h6>
+				
+				<h6><span class="by">Developed by</span> James Benedict <br> jabenedi@indiana.edu | <a href="https://twitter.com/jamesgbenedict">@jamesgbenedict</a></h6>
 			</div>
 		</div>
 
-		<div class="col-md-offset-1 col-md-6 body-copy">
-			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tortor erat, feugiat a mollis in, venenatis eget turpis. Morbi in nunc mauris. Fusce consequat nisl id arcu vestibulum, vitae vulputate arcu maximus. Nullam maximus lacus at sem feugiat, at scelerisque felis mollis. Cras in odio at turpis fringilla porta. Duis ultricies ex id quam laoreet tincidunt. Mauris scelerisque tortor at ligula scelerisque, quis scelerisque enim condimentum. In aliquam aliquet diam ut facilisis. Integer commodo vehicula cursus. Sed elit nisi, interdum ac cursus ornare, luctus a sem</p>
-			<p> Donec fringilla elit in sapien tincidunt placerat. In consectetur elementum elit, eu pretium ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur aliquam augue quis ultrices. Donec hendrerit finibus orci vitae aliquet. Sed vestibulum rhoncus ante, nec consequat enim interdum in. Pellentesque feugiat turpis lorem, vestibulum luctus velit tincidunt ac.</p>	
-		</div><!-- end of body-copy column -->
+		<div class="col-md-offset-1 col-md-7 body-copy">
 
-		<div class="col-md-4 sidebar">
-			<figure>
-				<img src="img/img.sm.jpg" alt="example image">
-				<figcaption>This is a caption for images. I need a longer caption to test this thing Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tortor erat, feugiat a mollis in, venenatis eget turpis. Morbi in nunc mauris. Fusce consequat nisl id arcu vestibulum, vitae vulputate arcu maximus. Nullam maximus lacus at sem feugiat, at scelerisque felis mollis.</figcaption>
-			</figure>
-		</div><!-- End of sidebar -->
+			<a name="fonts"></a>
+
 		
-		<div class="col-md-offset-1 col-md-6 body-copy">
-			<p> Quisque eleifend vitae est a blandit. Donec in sapien est. Nam maximus purus quis consequat malesuada. Maecenas interdum, elit a porta euismod, felis massa condimentum mauris, vitae aliquet neque augue eget arcu. Proin consequat mauris ut volutpat egestas. Aenean tempus varius urna vel vestibulum. Quisque malesuada libero eget iaculis dapibus. Maecenas mattis tortor eget mauris mattis posuere. Vivamus aliquet nisl sit amet leo interdum, a viverra mauris pretium. Ut imperdiet, metus a blandit eleifend, arcu purus mattis nisi, at egestas nisi velit sit amet tellus. Ut quis maximus dui. Donec aliquam dapibus eros et sodales. Ut augue ex, laoreet vel porta ullamcorper, faucibus non dolor.</p>
+			<h3>Fonts</h3>
+			<p>If you want a special font for headlines, let us known. If not stick with these fonts below.</p>
+				<h1>This is h1, use it for headlines</h1>
+				<h2>This is h2, use it for subheads</h2>
+				<h3>This is h3, use it for section heads and pulled quotes</h3>
+				<h4>This is h4, use it for graphic subheads or if needed section subheads</h4>
+				<h5>This is h5, use it as graphic body copy</h5>
+				<h6>This is h6, use it for bylines</h6>
+				<p>This is p, use it for paragraphs</p>
+				<figure><figcaption>This is a figcaption, used to caption figures</figcaption>	</figure>
+				<ul>
+					<li>This is a list</li>
+					<li>These are great for ASF </li>
+				</ul>
+		<hr>
+		</div>
+			
+		<div class="col-md-offset-1 col-md-7 body-copy">
+			<a name="categories"></a>
+
+
+			<h3>Media Categories</h3>
+			<p>There are two categories your media falls into. Figure media requires a figure tag around it and a figcaption to explain what it is. HTML media doesn't require a figure tag although it can be place in one if you want. HTML media is place in custom divs you or I have made. In general, html content scales size easier, but figure content is quicker to setup.</p>
+
+			<h4>Figure media includes</h4>
+			<ul>
+				<li>images</li>
+				<li>videos</li>
+				<li>audio</li>
+				<li>embedded content</li>
+			</ul>
+
+			<h4>HTML media includes</h4>
+			<ul>
+				<li>body copy</li>
+				<li>pulled quotes</li>
+				<li>more info box</li>
+				<li>related content box</li>
+				<li>slideshows</li>
+				<li>graphics</li>
+				<li>stylized text</li>
+				<li>maps</li>
+				<li>timelines</li>
+				<li>soundcite</li>
+				<li>storymaps</li>
+				<li>anything else you request</li>
+			</ul>
+
+			<a name="placement"></a>
+			<h3>Media Placement</h3>
+				<p>The grid of this article on a medium or larger screen is one body-copy column that is 7 columns wide with one column offset to the left, and one sidebar column that is 4 columns wide. For mobile, everything is the full 12 colunmns wide. These columns live in a row which can be used to organize sections of your code. You can copy in as many columns into a row as you want, but once the total width of the columns equals 12, any other columns will float underneath. Since everything floats to the top, the easiest way to lineup the sidebar with the body-copy is to start a body-copy column on the paragraph that you want to line up the sidebar with. Then include the sidebar underneath and the sidebar will float and line up with the top of the first paragraph or first media in the body-copy column. If you want to read more about the grid structure, read about <a href="http://getbootstrap.com/2.3.2/scaffolding.html">Bootstrap scaffolding</a>.</p>
 		
+				<p>Any media can be placed in one of three areas - inline, sidebar on break. Inline is in the body copy column, sidebar is obviously in the sidebar and break breaks from the row and gives you access to make something the full screen width. You can technically add more options by making divs in the columns a different percentage width (width: 50%, 150%, etc.) if you need a work around. Try to avoid doing this if you can, but often when making graphics something doesn't line up quite right and you need a little more freedom. Stay away from absolute values (width: 50px) as they are more buggy when coding a responsive design unless something is small like styling the twitter button to width: 5px, since this doesn't need to change when loaded on a mobile device.</p>
 
-			<figure>
-				<img src="img/img.lg.jpg">
-				<figcaption>This is the caption for an inline image.</figcaption>
-			</figure>
-		</div> <!-- end of body-copy column -->
-
-		<div class="col-md-4 sidebar">
-			<div class="pulledquote">
-				<h3>
-					"This is my pulled quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tortor erat, feugiat a mollis in, venenatis eget turpis. Morbi in nunc mauris. Fusce consequat nisl id arcu vestibulum, vitae vulputate arcu maximus."
-					<p>James Benedict</p>
-				</h3>
-			</div> <!-- end of pulled quote -->
+				<p>If you want to animate your media, look at <a href="https://daneden.github.io/animate.css/">animate.css</a> and <a href="http://mynameismatthieu.com/WOW/">wow.js</a> to reveal those animations when scrolled over. Look at my story about <a href="specials.idsnews.com/yaolin">Yaolin Wang's murder</a> or <a href="https://github.com/IU-Student-Media/specials/tree/master/yaolin">check out the code</a> to see a working example of both.</p>
 		</div>
 
-		<div class="col-md-offset-1 col-md-6 body-copy">
-			<p> Aenean id volutpat lacus. Suspendisse in dolor tempus neque sagittis tempor. Suspendisse at malesuada turpis. Nunc tristique elementum est egestas viverra. Pellentesque id sapien sed velit porttitor feugiat ut a dolor. Nullam fringilla ante id tortor placerat, in rutrum massa euismod. Quisque pellentesque eu lectus quis dapibus. Curabitur aliquam vehicula tellus, et egestas quam auctor sed. Nullam convallis suscipit est nec malesuada. Morbi a ligula eget ex faucibus varius sed a est. Integer enim magna, convallis vitae lectus rutrum, lacinia pulvinar nibh. Donec semper, turpis a dapibus posuere, eros lectus convallis libero, nec pellentesque est elit et tortor.</p>
-		</div> <!-- end of body copy -->
+	
+					
+			
+			<div class="col-md-offset-1 col-md-7 body-copy">
+				<h4> Inline Exmaple</h4>
+					<figure>
+						<img src="img/img.sm.jpg" alt="small example sidebar image">
+						<figcaption>This is an inline example.</figcaption>
+					</figure>
 
-		
+					<figure class="wow fadeIn"> 
+							<img src="img/img.sm.jpg" alt="small example sidebar image">
+							<figcaption>This is an inline example that fades in with when scrolled over. The class fadeIn comes from animate.css and the class wow comes from wow.js.</figcaption>
+					</figure>
+					
+					<!-- This is inline media with a class of inline-narrow  -->
+					<figure class="inline-narrow"> 
+							<img src="img/img.sm.jpg" alt="small example sidebar image">
+							<figcaption>This is an inline example with a custom class of inline-narrow that makes it 50% width of the image. You can add more classes in your style.css for more fitting widths.</figcaption>
+					</figure>
 
-		<div class="col-md-offset-1 col-md-6 inline">
-			<p> In pharetra aliquam neque a posuere. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer eget ligula ut mi ornare vulputate. Maecenas finibus eleifend ipsum. Aliquam ante orci, elementum in odio eu, bibendum volutpat augue. In hac habitasse platea dictumst. Donec tincidunt varius tortor ut finibus. Sed vel leo vel sapien dictum lobortis eget nec eros. Vestibulum vel porttitor augue. Aliquam quis magna vitae tellus tincidunt rutrum a ac velit.</p>
-			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tortor erat, feugiat a mollis in, venenatis eget turpis. Morbi in nunc mauris. Fusce consequat nisl id arcu vestibulum, vitae vulputate arcu maximus. Nullam maximus lacus at sem feugiat, at scelerisque felis mollis. Cras in odio at turpis fringilla porta. Duis ultricies ex id quam laoreet tincidunt. Mauris scelerisque tortor at ligula scelerisque, quis scelerisque enim condimentum. In aliquam aliquet diam ut facilisis. Integer commodo vehicula cursus. Sed elit nisi, interdum ac cursus ornare, luctus a sem.</p>
-			<div class="pulledquote">
-				<h3>
-					"This is my pulled quote."Duis ultricies ex id quam laoreet tincidunt. Mauris scelerisque tortor at ligula scelerisque, quis scelerisque enim condimentum. In aliquam.
-					<p>James Benedict</p>
-				</h3>
-			</div> <!-- end of pulled quote -->
-		</div> <!-- end of body copy -->
+				
+			</div><!-- end of body-copy column -->
 
-		<div class="col-md-4 sidebar">
-			<figure>
-				<img src="img/img.sm.jpg" alt="example image">
-				<figcaption>This is a caption for images. </figcaption>
-			</figure>
-		</div><!-- End of sidebar -->
-
-		<div class="col-md-offset-1 col-md-6 body-copy">
-			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tortor erat, feugiat a mollis in, venenatis eget turpis. Morbi in nunc mauris. Fusce consequat nisl id arcu vestibulum, vitae vulputate arcu maximus. Nullam maximus lacus at sem feugiat, at scelerisque felis mollis. Cras in odio at turpis fringilla porta. Duis ultricies ex id quam laoreet tincidunt. Mauris scelerisque tortor at ligula scelerisque, quis scelerisque enim condimentum. In aliquam aliquet diam ut facilisis. Integer commodo vehicula cursus. Sed elit nisi, interdum ac cursus ornare, luctus a sem.</p>
-		</div> <!-- end of body copy -->
-
-		<div class="col-md-4 sidebar">
-			<figure>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d12372.828007555223!2d-86.51481299999999!3d39.170014599999995!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1445227255470" width="100%" height="200px" frameborder="0" style="border:0" allowfullscreen></iframe>
-			<figcaption>here's a map caption</figcaption>
-			</figure>
-		</div>
+			<div class="col-md-4 sidebar">
+				<h4> Sidebar Exmaple</h4>
+					<figure>
+						<img src="img/img.sm.jpg" alt="small example sidebar image">
+						<figcaption>This is a sidebar example.</figcaption>
+					</figure>
+			</div> <!-- end of sidebar -->
 	</div><!-- end of article row -->
 </div> <!-- end of container fluid -->
 
 <div class="break">
+	<h4>Break Example</h4>
 	<figure>
 		<img src="img/img.lg.jpg">
 		<figcaption>
@@ -197,175 +306,470 @@
 	</figure>
 </div> <!-- end of break div -->
 	
-<div class="container-fluid">	
-	<div class="row article">
-		<div class="col-md-offset-1 col-md-6 body-copy">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tortor erat, feugiat a mollis in, venenatis eget turpis. Morbi in nunc mauris. Fusce consequat nisl id arcu vestibulum, vitae vulputate arcu maximus. Nullam maximus lacus at sem feugiat, at scelerisque felis mollis. Cras in odio at turpis fringilla porta. Duis ultricies ex id quam laoreet tincidunt. Mauris scelerisque tortor at ligula scelerisque, quis scelerisque enim condimentum. In aliquam aliquet diam ut facilisis. Integer commodo vehicula cursus. Sed elit nisi, interdum ac cursus ornare, luctus a sem.</p>
+<div class="container-fluid"> <!-- If you break from the container, you need start the div again -->
+	<div class="row article"> <!-- Same goes for the article row -->
+		<div class="col-md-offset-1 col-md-7 body-copy"> 
+			<a name="figure"></a>
+			<h3>Figure Media</h3>
+				<p> Figure media lives in figure tags. Suprsing I know. Figures are boxes that keep your media and caption grouped together. It also provides a margin around them to give it some space.</p>
+
+			<a name="images"></a>
+			<h3>Images</h3>
+				<p>Save images as either jpg or gifs. Follow the photo optimization Bonnie teaches you in class.</p>
+				
+				<figure>
+					<img src="img/img.sm.jpg" alt="small example image">
+					<figcaption>This is an picture </figcaption>
+				</figure>
+
+				<figure>
+					<img src="img/example.gif" alt="small example image">
+					<figcaption>This is an gif. It is low resolution so it is a little  blurry. If you save a larger file there should be more fidelity.</figcaption>
+				</figure>
+
+				
+				<h5>Features to Change</h5>
+				<ul>
+					<li>Consistent optimization protocol</li>
+				</ul>
+			<hr>
+
+			<a name="video"></a>
+			<h3>Video</h3>
+				<p>Save as mp4</p>
+
+				<figure>
+					<video width="100%" height="auto" autoplay>
+					  <source src="img/example.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+					</video>
+					<figcaption>This is a video's caption</figcaption>
+				</figure>
+
+				<figure>
+					<video width="100%" height="auto" controls>
+					  <source src="img/example.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+					</video>
+					<figcaption>This is a video's caption for a video with controls</figcaption>
+				</figure>
+
+				<figure>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/wlcm5GsZcDM" frameborder="0" allowfullscreen></iframe>
+					<figcaption>This is an embedded video from youtube.</figcaption>
+				</figure>
+				
+				<h5>Features to Change</h5>
+				<ul>
+					<li>add in ambient videos or cinemagraphs or harry potter photos</li>
+					<li>make auto looping videos</li>
+				</ul>
+
+				<hr>
+
+			<a name="audio"></a>
+			<h3>Audio</h3>
+				<p>The default audio play for HTMl kind of sucks in my opinion, but you can include plain audio files  this way.</p>
+
+				<figure>
+					<audio controls>
+					  <source src="audio/example.mp3" type="audio/mp3">
+					Your browser does not support the audio element.
+					</audio>
+				</figure>
+
+				<p>For longer audio pieces, I would upload them to soundcloud and then embed this file in a figure tag.</p>
+
+				<figure>
+					<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/190194548&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+				</figure>
+
+				<p>You can also use soundcite, which is examplained later on in this template.</p>
+
+				
+				<h5>Features to Change</h5>
+				<ul>
+					<li>add in audio slideshows (for now plan on making a video for them)</li>
+				</ul>
+				<hr>
+
+			<a name="embeded"></a>
+			<h3>Embeded</h3>
+				<p>Some content you're just going to want to embed from another service. I highly encourage this and have listed some programs below of things I think are useful. If you do this though, you need to able to create the embeded content on an offical IDS account, so we don't loose access to it next semester. I'd recommend that you make a version on an account you control and then work with a digi editor to export it to an IDS account. Don't try to reinvent the wheel, chances are if google has developed something that does what you're trying to do, it is going to work better than something you make yourself. Many sevices will have an embed option under their share menu, and will generate an iframe for you to paste over. Just copy that into the figure tag, and add a figcaption. Sometimes the sizing is a little wonky, so you might need to adjust width="100%" and play with the height until it looks good.</p>
+				
+				<h5>Recommended Services</h5>
+					<ul>
+						<li> <a href="https://www.youtube.com/user/idsnews">youtube</a></li>
+						<li> <a href="https://soundcloud.com/ids-6">soundcloud</a></li>
+						<li>google maps</li>
+						<li>spotify</li>
+						<li>scribd</li>
+						<li> <a href="https://soundcite.knightlab.com/">knightlab tools</a>
+							<ul>
+								<li> <a href="https://soundcite.knightlab.com/">soundcite</a></li>
+								<li> <a href="http://timeline.knightlab.com/">timeline</a> </li>
+								<li> <a href="https://juxtapose.knightlab.com/">juxtapose</a> </li>
+								<li> <a href="https://storymap.knightlab.com/">storymap</a></li>
+							</ul>
+	
+						</li>
+					</ul>
+
+				<figure>
+					<h4>This is a map in case you were wondering</h4>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d12372.828007555223!2d-86.51481299999999!3d39.170014599999995!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1445227255470" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<figcaption>Here's a map caption</figcaption>
+				</figure>
+
+			<a name="soundcite"></a>
+			<h3>soundcite</h3>
+					<p><a href="https://soundcite.knightlab.com/">Soundcite</a> is a tool developed by the knightlab. Follow the instructions on the website to set up your audio.</p>
+
+					<p>I like it for small audio ques like this <span class="soundcite" data-url="https://s3.amazonaws.com/media.ids/60208_exampleo.mp3" data-start="0" data-end="0" data-plays="1">pop.</span> or for scence setting.</p>
+
+			<a name="timeline"></a>
+			<h3>timeline</h3>
+				<p> <a href="http://timeline.knightlab.com/">Timeline</a> is another tool developed by the knightlab that allows you to make an interactive timeline with out javascript knowledge. You fill in a google sheet and then paste that into the tool found on their website. This give you an iframe you can place in your html file like this.</p>
+
+				<figure class="inline-wide">
+					<iframe src='//cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=14cgd2k-BP2o_H2dogfkG8aIShUeZc-YPVqSnDLSkMZw&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' frameborder='0'></iframe>
+					<figcaption>A timeline example from a story about IUBB arrests I did last semester. Since there was nothing in the sidebar and it would look better if it stretched out to fill more of the screen, I put the inline-wide class on the figure so that the figure's width='150%'. This is an example of when to use width stretching over redoing the grid.</figcaption>
+				</figure>
+
+			<a name="juxtapose"></a>
+			<h3>juxtapose</h3>
+				<p> <a href="https://juxtapose.knightlab.com/#create-new">Juxtapose</a>  is yet another knightlab tool, this one puts two images in one frame and slide between how much of each are shown.</p>
+				<figure>
+					<iframe frameborder="0" class="juxtapose" width="100%" height="360" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=b5e9554c-8674-11e5-a524-0e7075bba956"></iframe>
+					<figcaption>This is a generic example of juxtapose from their website.</figcaption>
+				</figure>
+
+			<a name="storymap"></a>
+			<h3>storymap</h3>
+				<p> <a href="https://storymap.knightlab.com/">Storymap</a> is the final knightlab tool with on this site. It is still in beta, and is definitly buggy so if you're having problems working with it come talk to me.</p>
+				<p>It also takes up a lot of memory, and requires mutliple steps to make even a generic example, so I'm not including one here. If you want to see what a final product looks like,<a href="http://america.aljazeera.com/multimedia/2014/3/map-timeline-malaysiaairlinesflight370.html"> look at this.</a></p>
+
+				<h5>Features to Change</h5>
+					<ul>
+						<li>add more recommended services</li>
+					</ul>
+
+			<hr>
+		</div> <!-- end of body-copy column -->
+	</div> <!-- end of article row -->
+
+	<div class="row article"> <!-- Same goes for the article row -->
+		<div class="col-md-offset-1 col-md-7 body-copy"> 
+			<a name="html"></a>
+			<h3>HTML Media</h3>
+
+			<p>HTML media is anything you put inside of a custom div tag. If you want you can also put these things inside of a figure tag, but do not require a figure tag like figure media does.</p>		
 			
-			<figure class="inline-wide">
-				<img src="img/img.lg.jpg">
-				<figcaption>You can also mess with the inline width percentage in the css to get more flexability on the layout. </figcaption>
-			</figure>
+			<hr>
+		</div> <!-- end of body copy -->
+
 		
-			<p>Donec fringilla elit in sapien tincidunt placerat. In consectetur elementum elit, eu pretium ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur aliquam augue quis ultrices. Donec hendrerit finibus orci vitae aliquet. Sed vestibulum rhoncus ante, nec consequat enim interdum in. Pellentesque feugiat turpis lorem, vestibulum luctus velit tincidunt ac.</p>
-			<p>Quisque eleifend vitae est a blandit. Donec in sapien est. Nam maximus purus quis consequat malesuada. Maecenas interdum, elit a porta euismod, felis massa condimentum mauris, vitae aliquet neque augue eget arcu. Proin consequat mauris ut volutpat egestas. Aenean tempus varius urna vel vestibulum. Quisque malesuada libero eget iaculis dapibus. Maecenas mattis tortor eget mauris mattis posuere. Vivamus aliquet nisl sit amet leo interdum, a viverra mauris pretium. Ut imperdiet, metus a blandit eleifend, arcu purus mattis nisi, at egestas nisi velit sit amet tellus. Ut quis maximus dui. Donec aliquam dapibus eros et sodales. Ut augue ex, laoreet vel porta ullamcorper, faucibus non dolor.</p>
 
-			<figure>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d12372.828007555223!2d-86.51481299999999!3d39.170014599999995!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1445227255470" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
-				<figcaption>here's a map caption</figcaption>
-			</figure>
-
-			<p>Aenean id volutpat lacus. Suspendisse in dolor tempus neque sagittis tempor. Suspendisse at malesuada turpis. Nunc tristique elementum est egestas viverra. Pellentesque id sapien sed velit porttitor feugiat ut a dolor. Nullam fringilla ante id tortor placerat, in rutrum massa euismod. Quisque pellentesque eu lectus quis dapibus. Curabitur aliquam vehicula tellus, et egestas quam auctor sed. Nullam convallis suscipit est nec malesuada. Morbi a ligula eget ex faucibus varius sed a est. Integer enim magna, convallis vitae lectus rutrum, lacinia pulvinar nibh. Donec semper, turpis a dapibus posuere, eros lectus convallis libero, nec pellentesque est elit et tortor.</p>
-
-			<p>In pharetra aliquam neque a posuere. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer eget ligula ut mi ornare vulputate. Maecenas finibus eleifend ipsum. Aliquam ante orci, elementum in odio eu, bibendum volutpat augue. In hac habitasse platea dictumst. Donec tincidunt varius tortor ut finibus. Sed vel leo vel sapien dictum lobortis eget nec eros. Vestibulum vel porttitor augue. Aliquam quis magna vitae tellus tincidunt rutrum a ac velit.</p>
-		</div> <!-- end of body copy column -->
-	</div> <!-- end of row article -->
-</div> <!-- end of container fluid -->
-
-
-<div class="container-fluid">
-	<div class="row article">
-		<div class="col-md-offset-1 col-md-6 body-copy">
-			<h3>Slideshows</h3>
-			<h4>I'm using Bootstrap's <a href="http://getbootstrap.com/javascript/#carousel">carousel </a>feature for slideshows.</h4>
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-		  <!-- Indicators -->
-		  <ol class="carousel-indicators">
-		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-		  </ol>
-
-		  <!-- Wrapper for slides -->
-		  <div class="carousel-inner" role="listbox">
-		    <div class="item active">
-		      <img src="img/header.jpg" alt="...">
-		      <div class="carousel-caption">
-		       <figcaption>This is a caption</figcaption>
-		      </div>
-		    </div>
-		    <div class="item">
-		      <img src="img/header.sm.jpg" alt="...">
-		      <div class="carousel-caption">
-		        <figcaption>This is a caption</figcaption>
-		      </div>
-		    </div>
-		    <div class="item">
-		      <img src="img/header.lg.jpg" alt="...">
-		      <div class="carousel-caption">
-		        <figcaption>This is a caption</figcaption>
-		      </div>
-		    </div>
-		    
-		  </div>
-
-		  <!-- Controls -->
-		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		    <span class="sr-only">Previous</span>
-		  </a>
-		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		    <span class="sr-only">Next</span>
-		  </a>
+		<div class="col-md-offset-1 col-md-7 body-copy">
+		<a name="quote"></a>
+			<h3>Pulled Quote</h3>
 		</div>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tortor erat, feugiat a mollis in, venenatis eget turpis. Morbi in nunc mauris. Fusce consequat nisl id arcu vestibulum, vitae vulputate arcu maximus. Nullam maximus lacus at sem feugiat, at scelerisque felis mollis. Cras in odio at turpis fringilla porta. Duis ultricies ex id quam laoreet tincidunt. Mauris scelerisque tortor at ligula scelerisque, quis scelerisque enim condimentum. In aliquam aliquet diam ut facilisis. Integer commodo vehicula cursus. Sed elit nisi, interdum ac cursus ornare, luctus a sem.</p>
-	</div>
+		<!-- the pulledquote doesn't work well if you lineup with head tags due to the margin placed on the,. What I did here was end the body-copy column after the h3, and start another body-copy tag directly under it. Then I put a sidebar following the second body-copy tag so it floats up to lineup with the paragraph.  -->
+		<div class="col-md-offset-1 col-md-7 body-copy">
+				<p>Pulled quotes are a prewritten style that lives in the ids.css file. I tend to put them in the sidebar, but that is just my styles so feel free to put htme anywhere. I also like putting a fadein animation which triggers on scrollover so they appear as the reader goes through the article.</p>
 
-	<div class="col-md-offset-1 col-md-6 body-copy">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tortor erat, feugiat a mollis in, venenatis eget turpis. Morbi in nunc mauris. Fusce consequat nisl id arcu vestibulum, vitae vulputate arcu maximus. Nullam maximus lacus at sem feugiat, at scelerisque felis mollis. Cras in odio at turpis fringilla porta. Duis ultricies ex id quam laoreet tincidunt. Mauris scelerisque tortor at ligula scelerisque, quis scelerisque enim condimentum. In aliquam aliquet diam ut facilisis. Integer commodo vehicula cursus. Sed elit nisi, interdum ac cursus ornare, luctus a sem.</p>
+			<div class="pulledquote">
+				<h3>"This is my pulled quote."Duis ultricies ex id quam laoreet tincidunt. Mauris scelerisque tortor at ligula scelerisque, quis scelerisque enim condimentum. In aliquam.</h3>
+				<p>James Benedict</p>
+			</div> <!-- end of pulled quote -->
 
-		<p>Donec fringilla elit in sapien tincidunt placerat. In consectetur elementum elit, eu pretium ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur aliquam augue quis ultrices. Donec hendrerit finibus orci vitae aliquet. Sed vestibulum rhoncus ante, nec consequat enim interdum in. Pellentesque feugiat turpis lorem, vestibulum luctus velit tincidunt ac.</p>
-	</div> <!-- end of column -->
+			<h5>Features to Change</h5>
+				<ul>
+					<li>make sidebar pulledquote lineup with h1-6 tags</li>
+				</ul>
+			<hr>
+		</div> <!-- end of body copy -->
 
 		<div class="col-md-4 sidebar">
-		<!-- If you add multiple slideshows make sure to change the id from carousel-example-generic to a more fitting name. -->
-			<div id="carousel-example-2" class="carousel slide" data-ride="carousel">
-			  <!-- Indicators -->
+			<div class="pulledquote">
+				<h3>"This is my pulled quote."Duis ultricies ex id quam laoreet tincidunt. Mauris scelerisque tortor at ligula scelerisque, quis scelerisque enim condimentum. In aliquam.</h3>
+				<p>James Benedict</p>
+			</div> <!-- end of pulled quote -->
+		</div><!-- End of sidebar -->
+
+		<div class="col-md-offset-1 col-md-7 body-copy">
+			<a name="info"></a>
+			<h3>More info</h3>
+				<p>This feature still isn't designed yet, but is going to be a stylized div that you can put the sidebar as an alterative story form.</p>
+
+			<a name="related"></a>
+			<h3>Related Content</h3>
+				<p>This feature also isn't finished yet. It is going to be a stylized teaser box to other stories related to yours. Also if your story contiunes to have updates after publication, we can link in new articles to this build out via this. There will be a text only version as well as one that has both text and a teaser image. It will be able to be placed in either the sidebar or inline.</p>
+
+		</div> <!-- end of body copy column -->
+
+	</div><!-- end of article row -->
+	
+	
+	<div class="row article">
+		<div class="col-md-offset-1 col-md-7 body-copy">
+		<a name="slideshow"></a>
+			<h3>Slideshows</h3>
+				<p>I'm using Bootstrap's <a href="http://getbootstrap.com/javascript/#carousel">carousel </a>feature for slideshows.</p>
+				<!-- make sure to change the generic class if you have multiple slide shows. -->
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators, the count starts at 0 so the first item is data-slide-to="0" -->
 			  <ol class="carousel-indicators">
-			    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-			    <li data-target="#carousel-example-2" data-slide-to="1"></li>
-			    <li data-target="#carousel-example-2" data-slide-to="2"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <!-- add more list items for each slide used in the slideshow.  -->
 			  </ol>
 
 			  <!-- Wrapper for slides -->
 			  <div class="carousel-inner" role="listbox">
 			    <div class="item active">
-			      <img src="img/header.jpg" alt="...">
+			      <img src="img/header.lg.jpg" alt="...">
+			      <div class="carousel-caption">
+			       <figcaption>This is a caption</figcaption>
+			      </div>
+			    </div>
+
+			    <div class="item">
+			      <img src="img/header.sm.jpg" alt="...">
 			      <div class="carousel-caption">
 			        <figcaption>This is a caption</figcaption>
 			      </div>
 			    </div>
-			    <div class="item">
-			      <img src="img/header.sm.jpg" alt="...">
-			      <div class="carousel-caption">
-			        ...
-			      </div>
-			    </div>
+			    
 			    
 			  </div>
 
 			  <!-- Controls -->
-			  <a class="left carousel-control" href="#carousel-example-2" role="button" data-slide="prev">
+			  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
 			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 			    <span class="sr-only">Previous</span>
 			  </a>
-			  <a class="right carousel-control" href="#carousel-example-2" role="button" data-slide="next">
+			  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
 			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 			    <span class="sr-only">Next</span>
 			  </a>
-			</div>	
-		</div>
+			</div>
+			
+			<h5>Features to Change</h5>
+				<ul>
+					<li>restyle captions so that they look like a figcaption. For now, place captions as shown.</li>
+				</ul>
+		<hr>
+		</div> <!-- end of body copy -->
+	
 	</div> <!-- end of row -->
+	<!-- notice how ending a row doesn't really effect the layout in the browser. I tend to use rows as an organizational tool to help myself while coding. I might put the a section of the story with all the media in the correct hierarchy in a single row, so that if it changes postion I can just cut-paste the entire row into the right spot.  -->
+
 
 	<div class="row article">
-		<div class="col-md-offset-1 col-md-6 body-copy">
+		<div class="col-md-offset-1 col-md-7 body-copy">
+			<a name="charts"></a>
 			<h3>Interactive Charts</h3>
-			<h4>Use highcharts.js for your interactive charts, you can either place them in by calling a script, or embed it from jsfiddle.</h4>
+
+			<p>Interactive charts are developed with the <a href="http://www.highcharts.com/demo">highcharts.js</a> library. You can work from the templates available on highcharts website, but when you actually load the charts into your page locally host them. If you're confused how to convert the examples you work with online into a local javascript file come talk with me and I can help. It is pretty simple and is mainly copy and pasting things over, but it confusing to explain in writing.</p>
+			
 			
 			<!-- This is how you'd call the chart1 script -->
 			<figure class="chart">
 				<div id="chart1" style="min-width: 300px; height:500px"></div>
-				<figcaption>This is a locally hosted chart called in with jquery</figcaption>
+				<figcaption>This is a locally hosted chart called in with jquery. This chart is in a figure tag, because I wanted to include a caption, but it doesn't need to be if you believe the graphic stands alone.</figcaption>
 			</figure>
+
+			<figure>
+				<iframe width="100%" height="600" src="//jsfiddle.net/jbenedict/yt18ee0j/embedded/result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+				<figcaption>This is the same graphic hosted on jsfiddle (the service used to edit highchart examples). If you want to compare the difference between local js files and jsfiddle, This is the exact same code as the locally hosted on above.</figcaption>
+			</figure>
+
+			<h5>Features to Change</h5>
+				<ul>
+					<li>remove background color of charts so it isn't white</li>
+				</ul>
+		<hr>
 		</div> <!-- end of interactive charts column -->
-
-		<div class="col-md-offset-1 col-md-6 body-copy">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tortor erat, feugiat a mollis in, venenatis eget turpis. Morbi in nunc mauris. Fusce consequat nisl id arcu vestibulum, vitae vulputate arcu maximus. Nullam maximus lacus at sem feugiat, at scelerisque felis mollis. Cras in odio at turpis fringilla porta. Duis ultricies ex id quam laoreet tincidunt. Mauris scelerisque tortor at ligula scelerisque, quis scelerisque enim condimentum. In aliquam aliquet diam ut facilisis. Integer commodo vehicula cursus. Sed elit nisi, interdum ac cursus ornare, luctus a sem.</p>
-			<p>Aenean id volutpat lacus. Suspendisse in dolor tempus neque sagittis tempor. Suspendisse at malesuada turpis. Nunc tristique elementum est egestas viverra. Pellentesque id sapien sed velit porttitor feugiat ut a dolor. Nullam fringilla ante id tortor placerat, in rutrum massa euismod. Quisque pellentesque eu lectus quis dapibus. Curabitur aliquam vehicula tellus, et egestas quam auctor sed. Nullam convallis suscipit est nec malesuada. Morbi a ligula eget ex faucibus varius sed a est. Integer enim magna, convallis vitae lectus rutrum, lacinia pulvinar nibh. Donec semper, turpis a dapibus posuere, eros lectus convallis libero, nec pellentesque est elit et tortor.</p>
-
-			<p>In pharetra aliquam neque a posuere. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer eget ligula ut mi ornare vulputate. Maecenas finibus eleifend ipsum. Aliquam ante orci, elementum in odio eu, bibendum volutpat augue. In hac habitasse platea dictumst. Donec tincidunt varius tortor ut finibus. Sed vel leo vel sapien dictum lobortis eget nec eros. Vestibulum vel porttitor augue. Aliquam quis magna vitae tellus tincidunt rutrum a ac velit.</p>
-
-		</div>
-
-
-		<div class="col-md-4 sidebar">
-			<!-- This is how you embed a chart from highcharts. Make sure to keep track of your projects if you use jsfiddle. We're going put all highchart files as local scripts for the final version before publishing, but you can submit it through jsfiddle if that is easier for you to edit with. -->
-			<figure class="chart">
-				<iframe width="100%" height="450px" src="//jsfiddle.net/jbenedict/7joc1y44/embedded/result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-				<figcaption>This is an embeded chart hosted on jsfiddle</figcaption>
-			</figure>
-		</div>
 	</div> <!-- end of interactive charts row article -->
 
-</div> <!-- end of container fluid -->
-<div class="container-fluid">
-	<!-- Copy paste more article rows filled in with columns in here as your story contiunes.-->
-</div> <!-- end of fluid-container -->
 
-<div class="row contributors">
-		<div class="col-sm-offset-1 col-sm-3">
-			<h3>Contributors</h3>
-				<h6>James Benedict</h6>
-				<p>Head Developer | <a href="https://twitter.com/jamesgbenedict">@jamesgbenedict</a></p>
-		</div>
-			
-		<div class="col-sm-3 contributors">
-				<div class="fill"><h3 fill>this is hidden</h3></div>
-				<h6>Malinda Aston</h6>
-				<p>Editoral Advisor</p>
-		</div>
-</div> <!-- end of row contributors-->
+	<div class="row article">
+		<div class="col-md-offset-1 col-md-7 body-copy">
+		<a name="maps"></a>
+
+			<h3>Leaflet / Mapbox Map</h3>
+
+			<p>For smaller maps that wouldn't require the use of google fusion tables, I recommnend using mapbox/leaflet maps. It will load quicker and look better since it is locally hosted and you can alter the style. Leaflet is a library built ontop of mapbox created to make it easier and faster to create maps. But now <a href="https://www.mapbox.com/">mapbox also has an online graphic user interface </a> that makes it  simpler to use as well. The javascript might seem a little intimidating, but if you're confused come talk with me and we can walk through it.</p>
+			<h4>Locally hosted leaflet map </h4>
+			<div id="map"> </div>
+
+			<figure>
+				<h4>Mapbox hosted map</h4>
+				<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/jbenedict.nh269207/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiamJlbmVkaWN0IiwiYSI6IkEwVFlPMnMifQ.nfsDRgevKxru718j4XYp-g'></iframe>
+				<figcaption>This is embeded from mapbox's website. It was created using their <a href="https://www.mapbox.com/projects/">GUI editor</a>, which can easily be exported for use in a locally hosted version. If you're uncomfortable writing your own map.js file, I would make something with this tool and then work with the digital desk to transfer it over.</figcaption>
+			</figure>
+
+		<hr>
+		</div> <!-- end of body-copy -->
+	</div> <!-- end of map row -->
+
+	<div class="row article">
+		<div class="col-md-offset-1 col-md-7 body-copy">
+		<a name="mixitup"></a>
+		<h3>mixitup</h3>
+			<p>This hasn't been transfered over to the template yet, but if you want to see what it could do, check out <a href="https://mixitup.kunkalabs.com/">its website.</a></p>
+		<hr>
+		</div> <!-- end of body copy -->
+	</div> <!-- end of row -->
+
+	<div class="row submission">
+		<div class="col-md-offset-1 col-md-7 body-copy">
+		<a name="submit"></a>
+			<h3>Guidelines for IDS Submission</h3>
+
+			<p>Follow all commented instructions and call ids.css and ids.js last in your html. There is no absolute style rulebook, and we're open to changes as long as you have a compelling justification.</p>
+
+			<p>Try to keep the digital desk updated on your story throughout your reporting and not just when you're ready to publish. You should start working with us directly three weeks before publication, I’ve included outline with deadlines for each week included in the next section. </p>
+
+			<p>The earlier we know how you're going to tell the story the better it will work online. I'm excited if you want a featured added so just let me know if you have any ideas. We will likely be debugging eight to ten stories at the end of the semester, so we need to already be familiar with your code and its issues before then.
+			</p>
+
+			<p>When you’re designing your story, keep all your files in your project folder. Story structures jump around, and photos get swapped out late so it is best to have everything in your folder even though it will be large. Still optimize your images for the web, don’t have duplicates, etc. but if there is a chance it will be needed in the final project keep it in. We will work to get your folder slim before publishing.
+			</p>
+
+			<p>We host everything on github, but if you're not comfortable working with it you can also just give us your code via email or a thumb drive. It can't include any server-side programming like Ruby, Python, PHP, etc. but I don't imagine you would ever need to. All project folders must be less than 80MB. There is a lot of extra javascript in the template folder as it shows you every option available. The starter folder is trimmed down so start working from there. 
+			</p>
+
+			<h4>File Optimization</h4>
+
+			<ul>
+				<li>Save for web like Bonnie has taught (2x pixels you want with low compression rate) </li>
+				<li>Before publishing, we will host the photos on our CMS’s photo server via gryphon. You need to work with an editor who has access to gryphon to upload your image. Try talking with James Benedict, Anna Boone, Bari Goldman, Katelyn Rowe or Rachel Meert to upload.</li>
+				<li>Use recommended services to host other media</li>
+				<li>More info to come</li>
+			</ul>
+
+			<h3>Schedule and Deadlines</h3>
+
+				<p>Start working with our desk roughly three weeks before you want to publish. If you meet a deadline early you can move on to the next week.
+				</p>
+
+				<h4>Week 1</h4>
+				<ul>
+					<li>Submit your article <a href="https://docs.google.com/forms/d/1QeoXau5Ei1ZxBudCG72IKHDZvnaedjxyjayBAAHihCg/viewform">at this pitchlist</a> as other: buildout and include:</li>
+						<ul>
+							<li>A working headline and slug. Both can change if needed, but the slug will show up in the URL so make sure it isn’t insensitive.</li>
+							<li>A general list of the media you have (e.g. 2 maps, one chart, an audio slideshow and a couple photos).</li>
+							<li>Contact info of everyone working on the story.</li>
+							<li>When you want it to publish. If you’re unsure about the specific date, just put the Monday of the week you want to publish. </li>
+						</ul>
+					<li>Make sure you’re signed up for our <a href="https://jamesbenedict.slack.com/messages">slack account</a> so we can be in communication throughout the editing process.</li>
+					<li>Come into an office hour (M/W 3-4 p.m.) or schedule a time to meet with me to discuss your story. Think of ideas you want to include in your story that you couldn’t figure out or any big challenges you’re nervous about. We will also go through how to get started with the folder. </li>
+				</ul>
+
+				<h4>Week 2</h4>
+				<ul>
+					<li>Use the starter folder and copy-paste over examples from the template folder. If you run into issues getting things to work properly send us a message on slack. We might be able to identify the problem or send you a code snippet to fix it.</li>
+					<li>Come into office hours or schedule a time to meet me to discuss more complicated problems.</li>
+					<li>By the end of the week submit a first draft of your article. If you need / want to use lorem ipsum text that’s fine but have your media layed out in the correct hierarchy.</li>
+				</ul>
+
+				<h4>Week 3</h4>
+				<p>We need a full week to edit your code, so make sure to submit a rough draft a five days before your publication date. Every day has specific deadlines this week. You can come into the IDS to work if you want hands on help, or can submit folders remotely. </p>
+				<ul>
+					<li>Day 5
+						<ul>
+							<li>Tell us about major bugs or style problems you haven’t been able to figure out. </li>
+							<li>Come in to receive an edited rough draft. You will receive two to do lists, one for bugs and other to make it comply with the ids style guide.</li>
+							<li>Submit a final slug for use in the url of your website.</li>
+							<li>Consider reaching out to experts or subjects in your story for promotion on social media. Tell them you plan to publish in a week and ask would they retweet or share your story on facebook. Try sharing your story in multiple niche circles where it will gain the best traction online. </li>
+						</ul>
+					</li>
+					<li> Day 4
+						<ul>
+							<li>Update your style and submit a new version that complies with the ids style guide.</li>
+							<li>Start debugging</li>
+						</ul>
+					</li>
+					<li> Day 3
+						<ul>
+							<li>More debugging</li>
+							<li>Remove any features that still aren’t working by the end of the day.</li>
+							<li></li>
+						</ul>
+					</li>
+					<li> Day 2
+						<ul>
+							<li>Submit a debugged version. It should work on mobile, medium and large screens. If graphics or features aren’t working, they should be removed and a fully functional version submitted. If you are able to get them working before publication you can go back in and add it in, but we want a stable version that we know we can publish this day.</li>
+							<li>Push your folder to our server so it is live. </li>
+							<li>Make a list of problems discovered once the article went live. Normally these are small like a .js file being called in wrong, or an image being locally hosted somewhere outside the project folder.</li>
+						</ul>
+					</li>
+					<li>Day 1 (night of production):
+						<ul>
+							<li>Place in copy edited copy and captions.</li>
+							<li>Fix any issues found when the article went live.</li>
+							<li>Possibly add in fixed features that were removed the day before.</li>
+							<li>Prepare article for social media.</li>
+						</ul>
+					</li>
+					<li> Day 0 (day is appears in the paper)
+						<ul>
+							<li>Sleep</li>
+							<li>Try to be available to contact if other problems pop up or the story gains a lot of traction online.</li>
+						</ul>
+					</li>
+				</ul>
+
+		<h3>Things I've used so far</h3>
+			<ul>
+				<li><a href="https://www.google.com/fonts">Google Fonts</a></li>
+				<li><a href="http://www.getbootstrap.com/getting-started/#download">Bootstrap 3.3.5</a></li>
+				<li><a href="http://https://www.fortawesome.github.io/Font-Awesome">Font Awesome</a></li>
+				<li><a href="http://www.highcharts.com/download">Highcharts 4.1.9</a></li>
+				<li><a href="https://www.knightlab.northwestern.edu/">Knightlab tools</a></li>
+				<li><a href="http://www.ezgif.com/video-to-gif">Online Gif Converter</a></li>
+				<li><a href="https://www.jsfiddle.net/">jsfiddle</a></li>
+				<li><a href="https://rawgit.com/">Rawgit</a></li>
+			</ul>
+
+		<h3>Features in development</h3>
+			<ol>
+				<li>Adding snippets for all media types</li>
+				<li>Text overlay on header image</li>
+				<li>mixitup.js</li>
+				<li>ambient videos (harry potter photos)</li>
+				<li>button to tweet pulled quote</li>
+				<li>stylized section break to be used instead of ***</li>
+				<li><a href="http://responsejs.com/#sets"> responsejs</a>to automatically change images out for smaller res version</li>
+				<li>Change IDS logo to offical font</li>
+				<li>fix top-margin on image</li>
+				<li>tablet support</li>
+			</ol>
+
+
+
+
+		</div> <!-- end of body copy column -->
+		
+	</div>
+	
+
+	 <div class="row contributors">
+			<div class="col-sm-offset-1 col-sm-3">
+				<h3>Contributors</h3>
+					<h6>James Benedict</h6>
+					<p>Head Developer | <a href="https://twitter.com/jamesgbenedict">@jamesgbenedict</a></p>
+			</div>
+				
+			<div class="col-sm-3 contributors">
+					<div class="fill"><h3 fill>this is hidden</h3></div>
+					<h6>Other contributing help</h6>
+					<p>Their role</p>
+			</div>
+	</div> <!-- end of row contributors -->
+</div> <!-- end of container fluid -->
 
 <footer>
 	<p>© James Benedict, 2014-2015.</p>
@@ -377,7 +781,15 @@
 	<script src="js/highcharts.src.js"></script>
 
 	<script src="js/chart1.js"></script>
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+	<script src="js/wow.js"></script>
+
+        <script> new WOW().init(); </script>
+		
+
 	<script src="js/script.js"></script>
+	<script src="js/map.js"></script>
+	
 
 </body>
 </html>
