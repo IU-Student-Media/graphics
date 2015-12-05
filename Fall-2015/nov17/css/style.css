@@ -1,0 +1,68 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px
+}
+
+img {
+	width: 100%;
+	height: 
+	auto;
+}
+
+h1 {
+	font-size: 20px;
+	font-family: Helvetica;
+	font-weight: bold;
+}
+
+.maroon {
+	color: #800000;
+}
+
+.red {
+	color: #CC0000;
+}
+
+p {
+	line-height: 1.2em;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.source {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 20px;
+	font-family: Helvetica;
+	font-weight: bold;
+}
+
+.border {
+	border-bottom: 5px solid #CC0000;
+	border-bottom-width: 100%;
+}
+
+.begquote {
+	font-size: 30px;
+	display: block;
+	float: left;
+}
+
+.attributed {
+	display: block;
+	padding-top: 15px;
+	font-size: 14px;
+}
+
+.quote {
+	line-height: 1.5em;
+}
+
+.margtop {
+	margin-top: 40px
+}
